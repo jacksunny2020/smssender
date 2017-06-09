@@ -23,14 +23,14 @@ config service provider and the config file according to https://github.com/skyc
   ];
 
 
-2. append new service provider file line in the section providers of file app.config
+3. append new service provider file line in the section providers of file app.config
   after appended,it should looks like
    'providers' => [
         Illuminate\Auth\AuthServiceProvider::class,
         ......
         Jacksunny\SmsSender\AliyunSmsSendServiceProvider::class,
     ],
-3.  add test code to check if it works
+4.  add test code to check if it works
 
     $sms_template_factory = App::make(\Jacksunny\SmsSender\SmsTemplateFactory::class);
         $params = [
@@ -46,4 +46,4 @@ config service provider and the config file according to https://github.com/skyc
         $mobile = '13888888888';
         $result = $template->sendSms($mobile, $params);
   
-4. please notify me if you got any problem or error on it,thank you!
+5. please notify me if you got any problem or error on it,thank you!
