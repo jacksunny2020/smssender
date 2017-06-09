@@ -2,7 +2,9 @@
     "name": "jacksunny/smssender",
     "description": "template-based sms send ,default to use aliyun sms service",
     "type": "library",
-    "require": {},
+    "require": {
+        "skychf/aliyunmns": "^1.1"
+    },
     "require-dev": {
         "skychf/aliyunmns": "^1.1"
     },
