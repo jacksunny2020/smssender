@@ -1,5 +1,5 @@
 # smssender
-template-based sms send ,default to use aliyun sms service
+template-based sms send plugin for laravel 5.4+,default to use aliyun sms service
 
 # pre-condition
 config service provider and the config file according to https://github.com/skychf/aliyunmns
