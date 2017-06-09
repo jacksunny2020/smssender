@@ -3,10 +3,10 @@
     "description": "template-based sms send ,default to use aliyun sms service",
     "type": "library",
     "require": {
-        "skychf/aliyunmns": "^1.1"
+        "skychf/aliyunmns": "dev-master"
     },
     "require-dev": {
-        "skychf/aliyunmns": "^1.1"
+        "skychf/aliyunmns": "dev-master"
     },
     "authors": [
         {
