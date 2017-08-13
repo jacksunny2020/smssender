@@ -30,6 +30,7 @@ class SmsSenderAliyumns implements SmsSenderContract {
         $sms = new Sms();
         foreach ($receiver_mobiles as $receiver) {
             $mobile = $receiver;
+            $params['code'] = $template->code;
             $template_args = $params;
             $send_result = $sms->send($mobile, $template_args);
             $result = $result && $send_result;
